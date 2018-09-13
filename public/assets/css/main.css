@@ -3,6 +3,29 @@
 @import url('https://fonts.googleapis.com/css?family=Quicksand');
 @import url('https://fonts.googleapis.com/css?family=Rock+Salt');
 
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 15px black; 
+  border-radius: 1px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background-image: linear-gradient(red, white, blue); 
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background-image: linear-gradient(blue, white, red); 
+}
+
+
 :root {
   --header-height: 30em;
 }
@@ -103,6 +126,9 @@ button:focus {
 .button-dark:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+          background: red;
+          color: black;
+          border-radius: 10px 10px 10px 10px;
 }
 
 .button-group {
@@ -250,7 +276,7 @@ button:focus {
   font-size: 2.5em;
   padding: 5px 30px;
   border: 3px solid #ddd;
-  background: rgb(32, 175, 27);
+  background: rgb(145, 145, 243);
   font-weight: 600;
   color: rgb(14, 12, 12);
   -webkit-transition: all 300ms ease;
@@ -260,9 +286,9 @@ button:focus {
 }
 
 .storyButton:hover {
-  color: #777;
-  background: #ddd;
-  border: 3px solid #777;
+  color: rgb(12, 10, 10);
+  background: rgb(89, 196, 85);
+  border: 3px solid rgb(179, 190, 15);
 }
 
 .clearfix:after {
